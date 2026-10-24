@@ -77,7 +77,7 @@ kable(WA_summary, digits = 4)
 
 ```
 
-Using the code provided in class, create a ggplot graphic that visualizes these two confidence intervals. You'll want to use `geom_point` and `geom_linerange` to do so. Use states as the y-axis and mean precipitation as the x axis. Vary the color and position of the dots and lines for the mean/CI by the `time_range` variable. Feel free to also experiment with axis labels/themes to make the graph more appealing and accessible.
+Using the code provided in class, create a ggplot graphic that visualizes these two confidence intervals. You'll want to use `geom_point` and `geom_linerange` to do so. Use the two years as the y-axis and mean precipitation as the x axis. Vary the color and position of the dots and lines for the mean/CI by the `time_range` variable. Feel free to also experiment with axis labels/themes to make the graph more appealing and accessible.
 
 **Task 2** _Create a ggplot graphic as described above to show the confidence intervals for precipitation in Washington for each time range._
 
@@ -141,7 +141,7 @@ WA_county_summary <- WA_county_summary %>%
 kable(head(WA_county_summary), digits = 4)
 ```
 
-**Task 5** _Visualize the confidence intervals for the county-level data you generated in task 4, using the same style as you did for Task 2 above. For an optional extra challenge, visually highlight the counties where the confidence intervals between time periods do NOT overlap._
+**Task 5** _Visualize the confidence intervals for the county-level data you generated in task 4, similar to task 2 above. In this case, counties should be the y axis and precip is the x axis. Each county will have two confidence intervals, one for each time period. For an optional extra challenge, visually highlight the counties where the confidence intervals between time periods do NOT overlap._
 
 ```{r Task6}
 # As in the class example, geom_linerange shows the CI and geom_point shows the mean. Each period has its own color.
